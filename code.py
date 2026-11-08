@@ -42,6 +42,16 @@ def count_fast_pow(a, b, c):
     return res_count
 
 
+def count_iter(a, b, c):
+    res_count = 0
+    cur = 1
+    for y in range(b):
+        if cur == c:
+            res_count += 1
+        cur = (cur * a) % b
+
+    return res_count
+
 
 for a, b, c in tests:
-    print(count_fast_pow(a, b, c))
+    print(count_iter(a, b, c))
