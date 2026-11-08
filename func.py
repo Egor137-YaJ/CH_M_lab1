@@ -1,5 +1,3 @@
-
-
 tests = [
     (2, 7, 4),
     (2, 7, 3),
@@ -51,7 +49,3 @@ def count_iter(a, b, c):
         cur = (cur * a) % b
 
     return res_count
-
-
-for a, b, c in tests:
-    print(count_iter(a, b, c))
