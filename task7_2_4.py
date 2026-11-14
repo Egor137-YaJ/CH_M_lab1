@@ -1,4 +1,3 @@
-from func import *
 from task7_2_3 import *
 
 
