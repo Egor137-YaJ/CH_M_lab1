@@ -74,5 +74,3 @@ for row in test_points:
 
 
 
-
-
