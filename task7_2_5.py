@@ -29,6 +29,7 @@ for b in range(50, 1, -1):
             point_max_K.append((K_p, p))
             if all(S(p, oper_p(p_neigh, p, '-')) == 0 for p_neigh in p_neighs[1:]):
                 point_S0 = p
+            if K_p > 0:
                 count_changed_points_this_b += 1
     b_list.append(b)
     share_list.append(count_changed_points_this_b / (b * b))
